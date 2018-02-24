@@ -170,20 +170,60 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="addEmployee.aspx" />
+    <Content Include="addModel.aspx" />
+    <Content Include="addSupplier.aspx" />
+    <Content Include="catagoryAddPage.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\layout_content\bootstrap.min.css" />
+    <Content Include="Content\layout_content\font-awesome.min.css" />
+    <Content Include="Content\layout_content\jquery.bxslider.css" />
+    <Content Include="Content\layout_content\jquery.mobile-menu.css" />
+    <Content Include="Content\layout_content\owl.carousel.css" />
+    <Content Include="Content\layout_content\owl.theme.css" />
+    <Content Include="Content\layout_content\revslider.css" />
+    <Content Include="Content\layout_content\simple-line-icons.css" />
+    <Content Include="Content\layout_content\style.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="images\btn_remove.png" />
+    <Content Include="images\custom-img1.jpg" />
+    <Content Include="images\custom-img2.jpg" />
+    <Content Include="images\custom-img3.jpg" />
+    <Content Include="images\custom-img4.jpg" />
+    <Content Include="images\english.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\francais.png" />
+    <Content Include="images\german.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\menu-banner1.png" />
+    <Content Include="images\menu-banner2.png" />
+    <Content Include="images\menu-furniutre.png" />
+    <Content Include="images\menu-shoes.png" />
+    <Content Include="images\product3.jpg" />
+    <Content Include="images\product4.jpg" />
+    <Content Include="Insertproduct.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\layout_script\bootstrap.min.js" />
+    <Content Include="Scripts\layout_script\common.js" />
+    <Content Include="Scripts\layout_script\countdown.js" />
+    <Content Include="Scripts\layout_script\jquery.min.js" />
+    <Content Include="Scripts\layout_script\jquery.mobile-menu.min.js" />
+    <Content Include="Scripts\layout_script\owl.carousel.min.js" />
+    <Content Include="Scripts\layout_script\revslider.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -213,6 +253,9 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="subCategoryAddPage.aspx" />
+    <Content Include="subSubCatagoryAddPage.aspx" />
+    <Content Include="testPage.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -333,6 +376,27 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="addEmployee.aspx.cs">
+      <DependentUpon>addEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addEmployee.aspx.designer.cs">
+      <DependentUpon>addEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addModel.aspx.cs">
+      <DependentUpon>addModel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addModel.aspx.designer.cs">
+      <DependentUpon>addModel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addSupplier.aspx.cs">
+      <DependentUpon>addSupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addSupplier.aspx.designer.cs">
+      <DependentUpon>addSupplier.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -344,6 +408,14 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="catagoryAddPage.aspx.cs">
+      <DependentUpon>catagoryAddPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="catagoryAddPage.aspx.designer.cs">
+      <DependentUpon>catagoryAddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionString.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -360,6 +432,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Insertproduct.aspx.cs">
+      <DependentUpon>Insertproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Insertproduct.aspx.designer.cs">
+      <DependentUpon>Insertproduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -378,6 +457,27 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="subCategoryAddPage.aspx.cs">
+      <DependentUpon>subCategoryAddPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subCategoryAddPage.aspx.designer.cs">
+      <DependentUpon>subCategoryAddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="subSubCatagoryAddPage.aspx.cs">
+      <DependentUpon>subSubCatagoryAddPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subSubCatagoryAddPage.aspx.designer.cs">
+      <DependentUpon>subSubCatagoryAddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testPage.aspx.cs">
+      <DependentUpon>testPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testPage.aspx.designer.cs">
+      <DependentUpon>testPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -13,23 +13,23 @@
 <meta name="author" content="">
 
 <!-- Favicons Icon -->
-<link rel="icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 <title>Aspire premium HTML5 &amp; CSS3 template</title>
 
 <!-- Mobile Specific -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- CSS Style -->
-<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/font-awesome.min.css" media="all">
-<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/simple-line-icons.css" media="all">
-<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/owl.theme.css">
-<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/jquery.bxslider.css">
-<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/jquery.mobile-menu.css">
-<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/style.css" media="all">
-<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/revslider.css">
+<link rel="stylesheet" type="text/css" href="Content/layout_content/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="Content/layout_content/font-awesome.min.css" media="all">
+<link rel="stylesheet" type="text/css" href="Content/layout_content/simple-line-icons.css" media="all">
+<link rel="stylesheet" type="text/css" href="Content/layout_content/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="Content/layout_content/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="Content/layout_content/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="Content/layout_content/jquery.mobile-menu.css">
+<link rel="stylesheet" type="text/css" href="Content/layout_content/style.css" media="all">
+<link rel="stylesheet" type="text/css" href="Content/layout_content/revslider.css">
 <!-- Google Fonts -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600,800,400' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
@@ -69,7 +69,7 @@
         <div class="row">
           <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 logo-block"> 
             <!-- Header Logo -->
-            <div class="logo"> <a title="Magento Commerce" href="index.html"><img alt="Magento Commerce" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/logo.png"> </a> </div>
+            <div class="logo"> <a title="Magento Commerce" href="index.html"><img alt="Magento Commerce" src="images/logo.png"> </a> </div>
             <!-- End Header Logo --> 
           </div>
           <div class="col-lg-4 col-md-3 col-sm-4 col-xs-3 hidden-xs category-search-form">
@@ -84,11 +84,11 @@
           </div>
           <!-- Header Language -->
           <div class="col-xs-12 col-sm-6 col-md-7 col-lg-6 pull-right hidden-xs">
-            <div class="dropdown block-language-wrapper"> <a role="button" data-toggle="dropdown" data-target="#" class="block-language dropdown-toggle" href="#"> <img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/english.png" alt="language"> <span class="hidden-sm hidden-md">English</span> <span class="caret"></span> </a>
+            <div class="dropdown block-language-wrapper"> <a role="button" data-toggle="dropdown" data-target="#" class="block-language dropdown-toggle" href="#"> <img src="images/english.png" alt="language"> <span class="hidden-sm hidden-md">English</span> <span class="caret"></span> </a>
               <ul class="dropdown-menu" role="menu">
-                <li role="presentation"> <a href="#"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/english.png" alt="language"> English </a> </li>
-                <li role="presentation"> <a href="#"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/francais.png" alt="language"> French </a> </li>
-                <li role="presentation"> <a href="#"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/german.png" alt="language"> German </a> </li>
+                <li role="presentation"> <a href="#"><img src="images/english.png" alt="language"> English </a> </li>
+                <li role="presentation"> <a href="#"><img src="images/francais.png" alt="language"> French </a> </li>
+                <li role="presentation"> <a href="#"><img src="images/german.png" alt="language"> German </a> </li>
               </ul>
             </div>
             <!-- End Header Language --> 
@@ -228,10 +228,10 @@
                   <!--nav-block nav-block-center-->
                   <div class="nav-add">
                     <div class="push_item">
-                      <div class="push_img"> <a href="#"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/menu-banner1.png" alt="sunglass"> </a> </div>
+                      <div class="push_img"> <a href="#"><img src="images/menu-banner1.png" alt="sunglass"> </a> </div>
                     </div>
                     <div class="push_item push_item_last">
-                      <div class="push_img"> <a href="#"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/menu-banner2.png" alt="shoes"> </a> </div>
+                      <div class="push_img"> <a href="#"><img src="images/menu-banner2.png" alt="shoes"> </a> </div>
                     </div>
                   </div>
                 </div>
@@ -335,10 +335,10 @@
                   <!--nav-block nav-block-center-->
                   <div class="nav-add">
                     <div class="push_item">
-                      <div class="push_img"> <a href="#"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/menu-banner1.png" alt="sunglass"> </a> </div>
+                      <div class="push_img"> <a href="#"><img src="images/menu-banner1.png" alt="sunglass"> </a> </div>
                     </div>
                     <div class="push_item push_item_last">
-                      <div class="push_img"> <a href="#"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/menu-banner2.png" alt="shoes"> </a> </div>
+                      <div class="push_img"> <a href="#"><img src="images/menu-banner2.png" alt="shoes"> </a> </div>
                     </div>
                   </div>
                 </div>
@@ -410,7 +410,7 @@
                       <!--level0--> 
                     </div>
                     <div class="col-2">
-                      <div class="menu_image1"> <a title="" href="#"><img alt="menu_image" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/menu-shoes.png"> </a> </div>
+                      <div class="menu_image1"> <a title="" href="#"><img alt="menu_image" src="images/menu-shoes.png"> </a> </div>
                     </div>
                   </div>
                   <!--nav-block nav-block-center--> 
@@ -535,7 +535,7 @@
                     <!--level0--> 
                   </div>
                   <!--nav-block nav-block-center-->
-                  <div class="nav-block nav-block-right std grid12-4"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/menu-furniutre.png" alt="Furniture"> </div>
+                  <div class="nav-block nav-block-right std grid12-4"><img src="images/menu-furniutre.png" alt="Furniture"> </div>
                 </div>
                 <!--level0-wrapper2--> 
               </div>
@@ -552,22 +552,22 @@
                   <div class="grid12-3">
                     <h4 class="heading">48 Hours Only!</h4>
                     <p>Our designed to deliver almost everything you want to do online.</p>
-                    <div><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/custom-img1.jpg" alt="custom-image"> </div>
+                    <div><img src="images/custom-img1.jpg" alt="custom-image"> </div>
                   </div>
                   <div class="grid12-3">
                     <h4 class="heading">Flat 20% on Men</h4>
                     <p>Responsive design is a Web design to provide an optimal navigation.</p>
-                    <div><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/custom-img2.jpg" alt="custom-image"> </div>
+                    <div><img src="images/custom-img2.jpg" alt="custom-image"> </div>
                   </div>
                   <div class="grid12-3">
                     <h4 class="heading">Hot Collection!</h4>
                     <p>Our font delivery service is built upon a reliable, global network of servers.</p>
-                    <div><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/custom-img3.jpg" alt="custom-image"> </div>
+                    <div><img src="images/custom-img3.jpg" alt="custom-image"> </div>
                   </div>
                   <div class="grid12-3">
                     <h4 class="heading">New Arrivals!</h4>
                     <p>Smart Product Grid is uses maximum available width of the screen.</p>
-                    <div><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/custom-img4.jpg" alt="custom-image"> </div>
+                    <div><img src="images/custom-img4.jpg" alt="custom-image"> </div>
                   </div>
                 </div>
               </div>
@@ -585,7 +585,7 @@
                 <!--block-subtitle-->
                 <ul class="mini-products-list" id="cart-sidebar">
                   <li class="item first">
-                    <div class="item-inner"> <a class="product-image" title="Retis lapen casen" href="#l"><img alt="Retis lapen casen" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/products-images/product4.jpg"> </a>
+                    <div class="item-inner"> <a class="product-image" title="Retis lapen casen" href="#l"><img alt="Retis lapen casen" src="images/product4.jpg"> </a>
                       <div class="product-details">
                         <div class="access"><a class="btn-remove1" title="Remove This Item" href="#">Remove</a> <a class="btn-edit" title="Edit item" href="#"><i class="icon-pencil"></i><span class="hidden">Edit item</span></a> </div>
                         <!--access-->
@@ -594,7 +594,7 @@
                     </div>
                   </li>
                   <li class="item last">
-                    <div class="item-inner"> <a class="product-image" title="Retis lapen casen" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/product_detail.html"><img alt="Retis lapen casen" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/products-images/product3.jpg"> </a>
+                    <div class="item-inner"> <a class="product-image" title="Retis lapen casen" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/product_detail.html"><img alt="Retis lapen casen" src="images/product3.jpg"> </a>
                       <div class="product-details">
                         <div class="access"><a class="btn-remove1" title="Remove This Item" href="#">Remove</a> <a class="btn-edit" title="Edit item" href="#"><i class="icon-pencil"></i><span class="hidden">Edit item</span></a> </div>
                         <!--access-->
@@ -634,13 +634,13 @@
         </div>
     </form>
     <!-- JavaScript start--> 
-<script type="text/javascript" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/js/jquery.min.js"></script> 
-<script type="text/javascript" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/js/bootstrap.min.js"></script> 
-<script type="text/javascript" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/js/revslider.js"></script> 
-<script type="text/javascript" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/js/common.js"></script> 
-<script type="text/javascript" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/js/owl.carousel.min.js"></script> 
-<script type="text/javascript" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/js/jquery.mobile-menu.min.js"></script> 
-<script type="text/javascript" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/js/countdown.js"></script> 
+<script type="text/javascript" src="Scripts/layout_script/jquery.min.js"></script> 
+<script type="text/javascript" src="Scripts/layout_script/bootstrap.min.js"></script> 
+<script type="text/javascript" src="Scripts/layout_script/revslider.js"></script> 
+<script type="text/javascript" src="Scripts/layout_script/common.js"></script> 
+<script type="text/javascript" src="Scripts/layout_script/owl.carousel.min.js"></script> 
+<script type="text/javascript" src="Scripts/layout_script/jquery.mobile-menu.min.js"></script> 
+<script type="text/javascript" src="Scripts/layout_script/countdown.js"></script> 
 <script type="text/javascript">
 
 			/******************************************
