@@ -1,0 +1,763 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Buymama_Asp.net.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons Icon -->
+<link rel="icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://demo.magikthemes.com/skin/frontend/base/default/favicon.ico" type="image/x-icon" />
+<title>Aspire premium HTML5 &amp; CSS3 template</title>
+
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS Style -->
+<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/font-awesome.min.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/simple-line-icons.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/jquery.mobile-menu.css">
+<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/style.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/css/revslider.css">
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600,800,400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <%--<webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />--%>
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+                  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 logo-block"> 
+            <!-- Header Logo -->
+            <div class="logo"> <a title="Magento Commerce" href="index.html"><img alt="Magento Commerce" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/logo.png"> </a> </div>
+            <!-- End Header Logo --> 
+          </div>
+          <div class="col-lg-4 col-md-3 col-sm-4 col-xs-3 hidden-xs category-search-form">
+            <div class="search-box">
+              <form id="search_mini_form" action="#" method="get">
+                
+                <!-- Autocomplete End code -->
+                <input id="search" type="text" name="q" value="Search entire store here..." class="searchbox" maxlength="128">
+                <button type="submit" title="Search" class="search-btn-bg" id="submit-button"><span><i class="fa fa-search"></i></span></button>
+              </form>
+            </div>
+          </div>
+          <!-- Header Language -->
+          <div class="col-xs-12 col-sm-6 col-md-7 col-lg-6 pull-right hidden-xs">
+            <div class="dropdown block-language-wrapper"> <a role="button" data-toggle="dropdown" data-target="#" class="block-language dropdown-toggle" href="#"> <img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/english.png" alt="language"> <span class="hidden-sm hidden-md">English</span> <span class="caret"></span> </a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation"> <a href="#"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/english.png" alt="language"> English </a> </li>
+                <li role="presentation"> <a href="#"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/francais.png" alt="language"> French </a> </li>
+                <li role="presentation"> <a href="#"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/german.png" alt="language"> German </a> </li>
+              </ul>
+            </div>
+            <!-- End Header Language --> 
+            
+            <!-- Header Currency -->
+            <div class="dropdown block-currency-wrapper"> <a role="button" data-toggle="dropdown" data-target="#" class="block-currency dropdown-toggle" href="#"> USD <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation"><a href="#"> $ - Dollar </a> </li>
+                <li role="presentation"><a href="#"> £ - Pound </a> </li>
+                <li role="presentation"><a href="#"> € - Euro </a> </li>
+              </ul>
+            </div>
+            <!-- End Header Currency -->
+            <div class="welcome-msg hidden-xs"> Default welcome msg! </div>
+            
+            <!-- Header Top Links -->
+            <div class="toplinks">
+              <div class="links">
+                <div class="myaccount"><a title="My Account" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/login.html"><span class="hidden-xs">My Account</span></a> </div>
+                <div class="wishlist"><a title="Checkout" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/checkout.html"><span class="hidden-xs">Wishlist</span></a> </div>
+                <div class="demo"><a title="Blog" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/blog.html"><span class="hidden-xs">Blog</span></a> </div>
+                <div class="login"><a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/login.html"><span class="hidden-xs">Log In</span></a> </div>
+              </div>
+            </div>
+            <!-- End Header Top Links --> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+       
+  <!-- nav --> 
+  <nav>
+    <div class="container">
+      <div class="mm-toggle-wrap">
+        <div class="mm-toggle"><i class="fa fa-align-justify"></i><span class="mm-label">Menu</span> </div>
+      </div>
+      <div class="nav-inner"> 
+        <!-- BEGIN NAV -->
+        <ul id="nav" class="hidden-xs">
+          <li class="level0 parent drop-menu" id="nav-home"><a href="index.html" class="level-top active"><span>Home</span></a>
+            <ul style="display: none;" class="level1">
+              <li class="level1"><a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home1/index.html"><span>Home Version 1</span></a> </li>
+              <li class="level1"><a href="index.html"><span>Home Version 2</span></a> </li>
+              </ul>
+          </li>
+          <li class="level0 nav-6 level-top drop-menu"> <a class="level-top" href="#"> <span>Pages</span> </a>
+            <ul class="level1">
+              <li class="level2 first"><a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Grid</span></a> </li>
+              <li class="level2 nav-10-2"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/list.html"> <span>List</span> </a> </li>
+              <li class="level2 nav-10-3"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/product_detail.html"> <span>Product Detail</span> </a> </li>
+              <li class="level2 nav-10-4"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/shopping_cart.html"> <span>Shopping Cart</span> </a> </li>
+              <li class="level2 parent"><a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/checkout.html"><span>Checkout</span></a> </li>
+              <li class="level1 nav-10-4"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/wishlist.html"> <span>Wishlist</span> </a> </li>
+              <li class="level1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/dashboard.html"> <span>Dashboard</span> </a> </li>
+              <li class="level1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/multiple_addresses.html"> <span>Multiple Addresses</span> </a> </li>
+              <li class="level1"><a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/compare.html"><span>Compare</span></a> </li>
+              <li class="level1"><a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/quick_view.html"><span>Quick View</span></a> </li>
+              <li class="level1"><a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/newsletter.html"><span>Newsletter</span></a> </li>
+              <li class="level1"><a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/404error.html"><span>404 Error Page</span></a> </li>
+            </ul>
+          </li>
+           <%
+               string connectionString = @"server=DESKTOP-JAP561I\SQLEXPRESS;database=Buymama;integrated security=true";
+
+               String select = "select Id,Name from Category";
+
+               System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection(connectionString);
+               System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand(select, conn);
+               conn.Open();
+
+               System.Data.SqlClient.SqlDataReader categoryReader = cmd.ExecuteReader();
+
+               while (categoryReader.Read())
+               {
+                   %>
+            <li class="mega-menu"> <a class="level-top" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span><%Response.Write(categoryReader["Name"].ToString()); %></span></a>
+            <div class="level0-wrapper dropdown-6col">
+              <div class="container">
+                <div class="level0-wrapper2">
+                  <div class="nav-block nav-block-center"> 
+                    <!--mega menu-->
+                    <ul class="level0">
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Styliest Bag</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Clutch Handbags</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Diaper Bags</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Bags</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Hobo Handbags</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Material Bag</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Beaded Handbags</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Fabric Handbags</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Handbags</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Leather Handbags</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Shoes</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Flat Shoes</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Flat Sandals</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Boots</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Heels</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Jwellery</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Bracelets</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Necklaces &amp; Pendants</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Pendants</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Pins &amp; Brooches</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Dresses</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Casual Dresses</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Evening</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Designer</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Party</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Swimwear</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Swimsuits</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Beach Clothing</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Clothing</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Bikinis</span></a> </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <!--level0--> 
+                  </div>
+                  <!--nav-block nav-block-center--> 
+                  <!--nav-block nav-block-center-->
+                  <div class="nav-add">
+                    <div class="push_item">
+                      <div class="push_img"> <a href="#"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/menu-banner1.png" alt="sunglass"> </a> </div>
+                    </div>
+                    <div class="push_item push_item_last">
+                      <div class="push_img"> <a href="#"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/menu-banner2.png" alt="shoes"> </a> </div>
+                    </div>
+                  </div>
+                </div>
+                <!--level0-wrapper2--> 
+              </div>
+              <!--container--> 
+            </div>
+            <!--level0-wrapper dropdown-6col--> 
+            <!--mega menu--> 
+          </li>
+            <%
+                   //Response.Write(categoryReader["Name"].ToString() + "=>");
+                   select = "Select  Sub_Category.Id,Sub_Category.Name from  Category,Sub_Category where Category.Id = Sub_Category.Category_Id and Category.Id = " + categoryReader["Id"].ToString();
+                   conn = new System.Data.SqlClient.SqlConnection(connectionString);
+                   cmd = new System.Data.SqlClient.SqlCommand(select, conn);
+                   conn.Open();
+                   System.Data.SqlClient.SqlDataReader subreader = cmd.ExecuteReader();
+                   while (subreader.Read())
+                   {
+                       //Response.Write(subreader["Name"].ToString() +"=> ");
+                       select = "Select Sub_Sub_Category.Id,Sub_Sub_Category.Name from Sub_Category,Sub_Sub_Category where Sub_Category.Id = Sub_Sub_Category.Sub_Category_Id and Sub_Category.Id =" + subreader["Id"].ToString();
+
+
+
+                       conn = new System.Data.SqlClient.SqlConnection(connectionString);
+                       cmd = new System.Data.SqlClient.SqlCommand(select, conn);
+                       conn.Open();
+
+                        System.Data.SqlClient.SqlDataReader subsubreader = cmd.ExecuteReader();
+                       while(subsubreader.Read())
+                       {
+                           //Response.Write(subsubreader["Name"].ToString() + ", ");
+                       }
+
+                       //Response.Write("<br>");
+                   }
+                   //Response.Write("<br>");
+
+
+
+               } %>
+          <li class="mega-menu"> <a class="level-top" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Women</span></a>
+            <div class="level0-wrapper dropdown-6col">
+              <div class="container">
+                <div class="level0-wrapper2">
+                  <div class="nav-block nav-block-center"> 
+                    <!--mega menu-->
+                    <ul class="level0">
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Styliest Bag</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Clutch Handbags</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Diaper Bags</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Bags</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Hobo Handbags</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Material Bag</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Beaded Handbags</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Fabric Handbags</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Handbags</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Leather Handbags</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Shoes</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Flat Shoes</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Flat Sandals</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Boots</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Heels</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Jwellery</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Bracelets</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Necklaces &amp; Pendants</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Pendants</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Pins &amp; Brooches</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Dresses</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Casual Dresses</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Evening</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Designer</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Party</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Swimwear</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Swimsuits</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Beach Clothing</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Clothing</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Bikinis</span></a> </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <!--level0--> 
+                  </div>
+                  <!--nav-block nav-block-center--> 
+                  <!--nav-block nav-block-center-->
+                  <div class="nav-add">
+                    <div class="push_item">
+                      <div class="push_img"> <a href="#"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/menu-banner1.png" alt="sunglass"> </a> </div>
+                    </div>
+                    <div class="push_item push_item_last">
+                      <div class="push_img"> <a href="#"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/menu-banner2.png" alt="shoes"> </a> </div>
+                    </div>
+                  </div>
+                </div>
+                <!--level0-wrapper2--> 
+              </div>
+              <!--container--> 
+            </div>
+            <!--level0-wrapper dropdown-6col--> 
+            <!--mega menu--> 
+          </li>
+            
+          <li class="mega-menu"> <a class="level-top" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Men</span></a>
+            <div class="level0-wrapper dropdown-6col">
+              <div class="container">
+                <div class="level0-wrapper2">
+                  <div class="nav-block nav-block-center"> 
+                    <!--mega menu-->
+                    <div class="col-1">
+                      <ul class="level0">
+                        <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Shoes</span></a>
+                          <ul class="level1">
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Sport Shoes</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Casual Shoes</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Leather Shoes</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Canvas shoes</span></a> </li>
+                          </ul>
+                        </li>
+                        <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Dresses</span></a>
+                          <ul class="level1">
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Casual Dresses</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Evening</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Designer</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Party</span></a> </li>
+                          </ul>
+                        </li>
+                        <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Jackets</span></a>
+                          <ul class="level1">
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Coats</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Formal Jackets</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Leather Jackets</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Blazers</span></a> </li>
+                          </ul>
+                        </li>
+                        <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Watches</span></a>
+                          <ul class="level1">
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Fasttrack</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Casio</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Titan</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Tommy-Hilfiger</span></a> </li>
+                          </ul>
+                        </li>
+                        <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Sunglasses</span></a>
+                          <ul class="level1">
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Ray Ban</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Fasttrack</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Police</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Oakley</span></a> </li>
+                          </ul>
+                        </li>
+                        <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Accessories</span></a>
+                          <ul class="level1">
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Bakpacks</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Wallets</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Laptop Bags</span></a> </li>
+                            <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Belts</span></a> </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <!--level0--> 
+                    </div>
+                    <div class="col-2">
+                      <div class="menu_image1"> <a title="" href="#"><img alt="menu_image" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/menu-shoes.png"> </a> </div>
+                    </div>
+                  </div>
+                  <!--nav-block nav-block-center--> 
+                  
+                </div>
+                <!--level0-wrapper2--> 
+              </div>
+              <!--container--> 
+            </div>
+            <!--level0-wrapper dropdown-6col--> 
+            <!--mega menu--> 
+          </li>
+
+          <li class="mega-menu"> <a class="level-top" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Electronics</span></a>
+            <div class="level0-wrapper dropdown-6col">
+              <div class="container">
+                <div class="level0-wrapper2">
+                  <div class="nav-block nav-block-center"> 
+                    <!--mega menu-->
+                    
+                    <ul class="level0">
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Mobiles</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Samsung</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Nokia</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>iPhone</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Sony</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Accesories</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Mobile Memory Cards</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Cases &amp; Covers</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Mobile Headphones</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Bluetooth Headsets</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Cameras</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Camcorders</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Point &amp; Shoot</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Digital SLR</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Camera Accesories</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Audio &amp; Video</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>MP3 Players</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>IPods</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Speakers</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Video Players</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Computer</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>External Hard Disk</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Pendrives</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Headphones</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>PC components</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Appliances</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Vaccume Cleaners</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Indoor Lighting</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Kitchen Tools</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Water Purifier</span></a> </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <!--level0--> 
+                  </div>
+                  <!--nav-block nav-block-center--> 
+                </div>
+                <!--level0-wrapper2--> 
+              </div>
+              <!--container--> 
+            </div>
+            <!--level0-wrapper dropdown-6col--> 
+            <!--mega menu--> 
+          </li>
+          <li class="mega-menu"> <a class="level-top" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Furniture</span></a>
+            <div class="level0-wrapper dropdown-6col">
+              <div class="container">
+                <div class="level0-wrapper2">
+                  <div class="nav-block nav-block-center grid12-8 itemgrid itemgrid-4col"> 
+                    <!--mega menu-->
+                    <ul class="level0">
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Living Room</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Racks &amp; Cabinets</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Sofas</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Chairs</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Tables</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Dining &amp; Bar</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Dining Table Sets</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Serving Trolleys</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Bar Counters</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Dining Cabinets</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Bedroom</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Beds</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Chest of Drawers</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Wardrobes &amp; Almirahs</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Nightstands</span></a> </li>
+                        </ul>
+                      </li>
+                      <li class="level3 nav-6-1 parent item"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Kitchen</span></a>
+                        <ul class="level1">
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Kitchen Racks</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Kitchen Fillings</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Wall Units</span></a> </li>
+                          <li class="level2 nav-6-1-1"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Benchers And Stools</span></a> </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <!--level0--> 
+                  </div>
+                  <!--nav-block nav-block-center-->
+                  <div class="nav-block nav-block-right std grid12-4"><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/menu-furniutre.png" alt="Furniture"> </div>
+                </div>
+                <!--level0-wrapper2--> 
+              </div>
+              <!--container--> 
+            </div>
+            <!--level0-wrapper dropdown-6col--> 
+            <!--mega menu--> 
+          </li>
+          <li class="mega-menu"> <a class="level-top" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/grid.html"><span>Kids</span></a> </li>
+          <li class="nav-custom-link mega-menu"> <a href="#" class="level-top"> <span>Custom</span> </a>
+            <div class="level0-wrapper custom-menu">
+              <div class="container">
+                <div class="header-nav-dropdown-wrapper clearer">
+                  <div class="grid12-3">
+                    <h4 class="heading">48 Hours Only!</h4>
+                    <p>Our designed to deliver almost everything you want to do online.</p>
+                    <div><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/custom-img1.jpg" alt="custom-image"> </div>
+                  </div>
+                  <div class="grid12-3">
+                    <h4 class="heading">Flat 20% on Men</h4>
+                    <p>Responsive design is a Web design to provide an optimal navigation.</p>
+                    <div><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/custom-img2.jpg" alt="custom-image"> </div>
+                  </div>
+                  <div class="grid12-3">
+                    <h4 class="heading">Hot Collection!</h4>
+                    <p>Our font delivery service is built upon a reliable, global network of servers.</p>
+                    <div><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/custom-img3.jpg" alt="custom-image"> </div>
+                  </div>
+                  <div class="grid12-3">
+                    <h4 class="heading">New Arrivals!</h4>
+                    <p>Smart Product Grid is uses maximum available width of the screen.</p>
+                    <div><img src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/images/custom-img4.jpg" alt="custom-image"> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!--nav-->
+        <div class="top-cart-contain"> 
+          <!-- Top Cart -->
+          <div class="mini-cart">
+            <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle"> <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/shopping_cart.html"><span class="price">My Cart</span> <span class="cart_count">2</span> </a> </div>
+            <div>
+              <div class="top-cart-content"> 
+                
+                <!--block-subtitle-->
+                <ul class="mini-products-list" id="cart-sidebar">
+                  <li class="item first">
+                    <div class="item-inner"> <a class="product-image" title="Retis lapen casen" href="#l"><img alt="Retis lapen casen" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/products-images/product4.jpg"> </a>
+                      <div class="product-details">
+                        <div class="access"><a class="btn-remove1" title="Remove This Item" href="#">Remove</a> <a class="btn-edit" title="Edit item" href="#"><i class="icon-pencil"></i><span class="hidden">Edit item</span></a> </div>
+                        <!--access-->
+                        <p class="product-name"><a href="#">Retis lapen casen...</a> </p>
+                        <strong>1</strong> x <span class="price">$179.99</span> </div>
+                    </div>
+                  </li>
+                  <li class="item last">
+                    <div class="item-inner"> <a class="product-image" title="Retis lapen casen" href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/product_detail.html"><img alt="Retis lapen casen" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/products-images/product3.jpg"> </a>
+                      <div class="product-details">
+                        <div class="access"><a class="btn-remove1" title="Remove This Item" href="#">Remove</a> <a class="btn-edit" title="Edit item" href="#"><i class="icon-pencil"></i><span class="hidden">Edit item</span></a> </div>
+                        <!--access-->
+                        <p class="product-name"><a href="#">Retis lapen casen...</a> </p>
+                        <strong>1</strong> x <span class="price">$80.00</span> </div>
+                    </div>
+                  </li>
+                </ul>
+                
+                <!--actions-->
+                <div class="actions">
+                  <button class="btn-checkout" title="Checkout" type="button"><span>Checkout</span> </button>
+                  <a href="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/shopping_cart.html" class="view-cart"><span>View Cart</span></a> </div>
+              </div>
+            </div>
+          </div>
+          <!-- Top Cart -->
+          <div id="ajaxconfig_info" style="display:none"> <a href="#/"></a>
+            <input value="" type="hidden">
+            <input id="enable_module" value="1" type="hidden">
+            <input class="effect_to_cart" value="1" type="hidden">
+            <input class="title_shopping_cart" value="Go to shopping cart" type="hidden">
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- end nav -->
+
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+            </footer>
+        </div>
+    </form>
+    <!-- JavaScript start--> 
+<script type="text/javascript" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/js/jquery.min.js"></script> 
+<script type="text/javascript" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/js/revslider.js"></script> 
+<script type="text/javascript" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/js/common.js"></script> 
+<script type="text/javascript" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/js/owl.carousel.min.js"></script> 
+<script type="text/javascript" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/js/jquery.mobile-menu.min.js"></script> 
+<script type="text/javascript" src="http://htmldemo.magikthemes.com/ecommerce/aspire-html-template/home2/js/countdown.js"></script> 
+<script type="text/javascript">
+
+			/******************************************
+				-	PREPARE PLACEHOLDER FOR SLIDER	-
+			******************************************/
+
+			var setREVStartSize=function(){};
+						
+				
+			setREVStartSize();
+			function revslider_showDoubleJqueryError(sliderID) {}
+			var tpj=jQuery;
+			tpj.noConflict();
+			var revapi6;
+			tpj(document).ready(function() {
+				if(tpj("#rev_slider_6_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_6_1");
+				}else{
+					revapi6 = tpj("#rev_slider_6_1").show().revolution({
+						sliderType:"standard",
+						sliderLayout:"auto",
+						dottedOverlay:"none",
+						delay:6000,
+						navigation: {
+							keyboardNavigation:"off",
+							keyboard_direction: "horizontal",
+							mouseScrollNavigation:"off",
+							onHoverStop:"off",
+							touch:{
+								touchenabled:"on",
+								swipe_threshold: 0.7,
+								swipe_min_touches: 1,
+								swipe_direction: "horizontal",
+								drag_block_vertical: false
+							}
+							,
+							arrows: {
+								style:"hades",
+								enable:true,
+								hide_onmobile:false,
+								hide_onleave:true,
+								hide_delay:200,
+								hide_delay_mobile:1200,
+								tmp:'<div class="tp-arr-allwrapper">	<div class="tp-arr-imgholder"></div></div>',
+								left: {
+									h_align:"left",
+									v_align:"center",
+									h_offset:20,
+									v_offset:0
+								},
+								right: {
+									h_align:"right",
+									v_align:"center",
+									h_offset:20,
+									v_offset:0
+								}
+							}
+							,
+							bullets: {
+								enable:true,
+								hide_onmobile:false,
+								style:"hades",
+								hide_onleave:true,
+								hide_delay:200,
+								hide_delay_mobile:1200,
+								direction:"horizontal",
+								h_align:"center",
+								v_align:"bottom",
+								h_offset:0,
+								v_offset:20,
+								space:5,
+								tmp:'<span class="tp-bullet-image"></span>'
+							}
+						},
+						gridwidth:1920,
+						gridheight:835,
+						lazyType:"none",
+						shadow:0,
+						spinner:"spinner0",
+						stopLoop:"off",
+						stopAfterLoops:-1,
+						stopAtSlide:-1,
+						shuffle:"off",
+						autoHeight:"on",
+						disableProgressBar:"on",
+						hideThumbsOnMobile:"off",
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						startWithSlide:0,
+						debugMode:false,
+						fallbacks: {
+							simplifyAll:"off",
+							nextSlideOnWindowFocus:"off",
+							disableFocusListener:false,
+						}
+					});
+				}
+			});	/*ready*/
+		</script> 
+
+
+<!-- Hot Deals Timer 1--> 
+<script type="text/javascript">
+var dthen1 = new Date("12/25/17 11:59:00 PM");
+	start = "08/04/15 03:02:11 AM";
+	start_date = Date.parse(start);
+	var dnow1 = new Date(start_date);
+	if (CountStepper > 0)
+	ddiff = new Date((dnow1) - (dthen1));
+	else
+	ddiff = new Date((dthen1) - (dnow1));
+	gsecs1 = Math.floor(ddiff.valueOf() / 1000);
+	
+	var iid1 = "countbox_1";
+	CountBack_slider(gsecs1, "countbox_1", 1);
+</script>
+<!-- JavaScript end-->
+</body>
+</html>
