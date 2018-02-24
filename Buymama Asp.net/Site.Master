@@ -153,7 +153,7 @@
             </ul>
           </li>
            <%
-               string connectionString = @"server=DESKTOP-JAP561I\SQLEXPRESS;database=Buymama;integrated security=true";
+               string connectionString = Buymama_Asp.net.ConnectionString.connectionString;
 
                String select = "select Id,Name from Category";
 
