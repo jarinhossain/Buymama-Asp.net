@@ -16,7 +16,8 @@ namespace Buymama_Asp.net
 
          
 
-
+            //jdi ei page er e kno button click kora hoi tahole IsPostBack true hoi.
+            
             if (IsPostBack == false)
             {
                   
@@ -94,7 +95,7 @@ namespace Buymama_Asp.net
                
             }
            
-            string insert = String.Format("Insert into Product_Supplier(Ref_No,Product_Id,Supplier_Id,Quantity,Unit_Price,Selling_Price) values ('{0}','{1}',{2},{3},{4},{5})", refe.Text, model.SelectedItem.Value, supplier.SelectedItem.Value, q, unitPrice.Text, sellingPrice.Text);
+            string insert = String.Format("Insert into Product_Supplier(Ref_No,Supplier_Id,Product_Id,Quantity,Unit_Price,Selling_Price) values ('{0}',{1},{2},{3},{4},{5})", refe.Text,  supplier.SelectedItem.Value, model.SelectedItem.Value, q, unitPrice.Text, sellingPrice.Text);
             conn = new SqlConnection(ConnectionString.connectionString);
             cmd = new SqlCommand(insert, conn);
             conn.Open();
@@ -125,14 +126,11 @@ namespace Buymama_Asp.net
             sub_sub_Categoryload_Function();
         }
 
-        protected void subSubCategory_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            model_Categoryload_function();
-        }
+     
 
         protected void subSubCategory_SelectedIndexChanged1(object sender, EventArgs e)
         {
-          
+            model_Categoryload_function();
         }
 
         protected void categoryButton3_Click(object sender, EventArgs e)
@@ -167,6 +165,8 @@ namespace Buymama_Asp.net
         }
         private  void clearAll()
         {
+            refe.Text = "";
+            supplier.SelectedIndex = 0;
             category.SelectedIndex = 0;
             subCategory.SelectedIndex = 0;
             subSubCategory.SelectedIndex = 0;

@@ -10,140 +10,145 @@
             height: 30px;
         }
     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <table>
-        <tr>
-            <td>
-                <asp:HiddenField ID="id" runat="server" />
-            </td>
-        </tr>
-         <tr> 
-            <td>Ref No </td> 
-            <td>
-                <asp:TextBox ID="refe" runat="server"></asp:TextBox>
+    <div class="container">
 
-            </td>
-              
-        </tr>
-         <tr> 
-            <td>Supplier Name</td> 
-            <td>
-                <asp:DropDownList ID="supplier" runat="server" AutoPostBack="True" OnSelectedIndexChanged="category_SelectedIndexChanged"></asp:DropDownList>
+        <form id="form1" runat="server" class="form-horizontal">
 
-            </td>
-              
-        </tr>
-          <tr> 
-            <td>Category</td> 
-            <td>
-                <asp:DropDownList ID="category" runat="server" AutoPostBack="True" OnSelectedIndexChanged="category_SelectedIndexChanged"></asp:DropDownList>
+            <h1 style="margin-left: 100px; margin-bottom: 20px">Insert Product</h1>
+            <asp:HiddenField ID="id" runat="server" />
+            <div class="form-group form-group-sm">
+                <asp:Label ID="Label1" CssClass="control-label col-md-2" runat="server" Text="Ref No"></asp:Label>
+                <div class="col-md-3" style="margin-left: 1px">
+                    <asp:TextBox ID="refe" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
 
-            </td>
-               <td>
-               
-                   <asp:Button ID="Button3" runat="server" Text="add" OnClick="categoryButton3_Click" />
-                </td>
-        </tr>
-          <tr> 
-            <td>Sub Category</td> 
-            <td>
-                <asp:DropDownList ID="subCategory" runat="server" AutoPostBack="True" OnSelectedIndexChanged="subCategory_SelectedIndexChanged"></asp:DropDownList>
+            </div>
 
-            </td>
-               <td>
-                <asp:Button ID="Button2" runat="server" Text="add" OnClick="subCategoryButton2_Click" />
-                </td>
-        </tr>
-          <tr> 
-            <td class="auto-style1">Sub Sub Category</td> 
-            <td class="auto-style1">
-                <asp:DropDownList ID="subSubCategory" runat="server" AutoPostBack="True" OnSelectedIndexChanged="subSubCategory_SelectedIndexChanged1"></asp:DropDownList>
 
-            </td>
-               <td class="auto-style1">
-                <asp:Button ID="Button1" runat="server" Text="add" OnClick="subSubCategoryButton1_Click1" />
-                </td>
-        </tr>
-     <tr>
-         <td>Model</td>
-         <td>
-             <asp:DropDownList ID="model" runat="server" AutoPostBack="True" OnSelectedIndexChanged="model_SelectedIndexChanged"></asp:DropDownList>
+            <div class="form-group form-group-sm">
+                <asp:Label ID="Label2" CssClass="control-label col-md-2" runat="server" Text="Supplier Name"></asp:Label>
+                <div class="col-md-3" style="margin-left: 1px">
+                    <asp:DropDownList ID="supplier" runat="server" CssClass="form-control" AutoPostBack="True"></asp:DropDownList>
+                </div>
 
-         </td>
-         <td>
-                <asp:Button ID="Button4" runat="server" Text="add" OnClick="modelButton4_Click" />
-                </td>
-     </tr>
-            <tr>
-                <td>Quantity Available</td>
-                <td>
-                    <asp:TextBox ID="quantity" runat="server"></asp:TextBox>
+            </div>
 
-                </td>
-                <td>
-                   
-                    <asp:Label ID="quantitymsg" runat="server" Text=""></asp:Label>
 
-                </td>
-            </tr>
-         <tr>
-                <td>Unit Price</td>
-                <td>
-                    <asp:TextBox ID="unitPrice" runat="server"></asp:TextBox>
+            <div class="form-group form-group-sm">
+                <asp:Label ID="Label3" CssClass="control-label col-md-2" runat="server" Text="Category"></asp:Label>
+                <div class="col-md-3" style="margin-left: 1px">
+                    <asp:DropDownList ID="category" CssClass="form-control" runat="server" AutoPostBack="True" OnSelectedIndexChanged="category_SelectedIndexChanged"></asp:DropDownList>
+                </div>
+                <asp:Button ID="Button3" runat="server" CssClass="btn btn-info" Text="add" OnClick="categoryButton3_Click" />
+            </div>
 
-                </td>
-            </tr>
-            <tr>
-                <td>Selling Price</td>
-                <td>
-                    <asp:TextBox ID="sellingPrice" runat="server"></asp:TextBox>
+            <div class="form-group form-group-sm">
+                <asp:Label ID="Label4" CssClass="control-label col-md-2" runat="server" Text="Sub Category"></asp:Label>
+                <div class="col-md-3" style="margin-left: 1px">
+                    <asp:DropDownList ID="subCategory" runat="server" CssClass="form-control" AutoPostBack="True" OnSelectedIndexChanged="subCategory_SelectedIndexChanged"></asp:DropDownList>
+                </div>
+                <asp:Button ID="Button2" runat="server" CssClass="btn btn-info" Text="add" OnClick="subCategoryButton2_Click" />
+            </div>
 
-                </td>
-            </tr>
-         <tr>
-                <td>Description</td>
-                <td>
-                    <asp:TextBox ID="description" runat="server"></asp:TextBox>
 
-                </td>
-            </tr>
-          <tr>
-                <td>Is Active</td>
-                <td>
-                    <asp:DropDownList ID="active" runat="server">
-                      
+
+
+            <div class="form-group form-group-sm">
+                <asp:Label ID="Label5" CssClass="control-label col-md-2" runat="server" Text="Sub Sub Category"></asp:Label>
+                <div class="col-md-3" style="margin-left: 1px">
+                    <asp:DropDownList ID="subSubCategory" runat="server" CssClass="form-control" AutoPostBack="True" OnSelectedIndexChanged="subSubCategory_SelectedIndexChanged1"></asp:DropDownList>
+                </div>
+                <asp:Button ID="Button1" runat="server" CssClass="btn btn-info" Text="add" OnClick="subSubCategoryButton1_Click1" />
+            </div>
+
+
+
+
+            <div class="form-group form-group-sm">
+                <asp:Label ID="Label6" CssClass="control-label col-md-2" runat="server" Text="Model"></asp:Label>
+                <div class="col-md-3" style="margin-left: 1px">
+                    <asp:DropDownList ID="model" runat="server" CssClass="form-control" AutoPostBack="True" OnSelectedIndexChanged="model_SelectedIndexChanged"></asp:DropDownList>
+                </div>
+
+                <asp:Button ID="Button4" runat="server" CssClass="btn btn-info" Text="add" OnClick="modelButton4_Click" />
+            </div>
+
+            <div class="form-group form-group-sm">
+                <asp:Label ID="Label7" CssClass="control-label col-md-2" runat="server" Text="Quantity Available"></asp:Label>
+                <div class="col-md-3" style="margin-left: 1px">
+                    <asp:TextBox ID="quantity" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+
+                <asp:Label ID="quantitymsg" runat="server" Text=""></asp:Label>
+            </div>
+
+
+            <div class="form-group form-group-sm">
+                <asp:Label ID="Label8" CssClass="control-label col-md-2" runat="server" Text="Unit Price"></asp:Label>
+                <div class="col-md-3" style="margin-left: 1px">
+                    <asp:TextBox ID="unitPrice" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+
+                <asp:Label ID="Label9" runat="server" Text=""></asp:Label>
+            </div>
+
+
+            <div class="form-group form-group-sm">
+                <asp:Label ID="Label10" CssClass="control-label col-md-2" runat="server" Text="Selling Price"></asp:Label>
+                <div class="col-md-3" style="margin-left: 1px">
+                    <asp:TextBox ID="sellingPrice" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="form-group form-group-sm">
+                <asp:Label ID="Label11" CssClass="control-label col-md-2" runat="server" Text="Description"></asp:Label>
+                <div class="col-md-3" style="margin-left: 1px">
+                    <asp:TextBox ID="description" CssClass="form-control" runat="server"></asp:TextBox>
+                </div>
+
+
+            </div>
+
+            <div class="form-group form-group-sm">
+                <asp:Label ID="Label12" CssClass="control-label col-md-2" runat="server" Text="Is Active"></asp:Label>
+                <div class="col-md-3" style="margin-left: 1px">
+                    <asp:DropDownList ID="active" CssClass="form-control" runat="server">
+
                         <asp:ListItem Value="0">Yes</asp:ListItem>
                         <asp:ListItem Value="1">No</asp:ListItem>
                     </asp:DropDownList>
+                </div>
 
-                </td>
-            </tr>
-        <tr>
-            <td>
-                <asp:Button ID="Button5" runat="server" Text="Clear" OnClick="ClearButton5_Click" />
 
-            </td>
-            <td>
-                <asp:Button ID="saveButton" runat="server" Text="Save" OnClick="save_Button1_Click" />
-            </td>
+            </div>
 
-        </tr>
-         <tr>
-            <td>
+
+
+            <div class="form-group form-group-sm">
+                <div class="col-md-2"></div>
+
+                <asp:Button ID="Button5" Style="margin-left: 15px" runat="server" CssClass="btn btn-info" Text="Clear" OnClick="ClearButton5_Click" />
+                <asp:Button ID="saveButton" runat="server" CssClass="btn btn-info" Text="Save" OnClick="save_Button1_Click" />
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-md-2"></div>
                 <asp:Label ID="msg" runat="server" Text=""></asp:Label>
+            </div>
 
-            </td>
-           
 
-        </tr>
-        
-       
-
-    </table>
-       
-
-    </form>
+        </form>
+    </div>
 </body>
 </html>
